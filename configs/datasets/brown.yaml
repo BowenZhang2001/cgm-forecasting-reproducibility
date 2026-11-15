@@ -1,0 +1,15 @@
+dataset: Brown_2019
+status: audited_t1d_baseline
+source_cgm: DexcomClarityCGM_a.txt
+source_cgm_size_bytes: 766707918
+source_cgm_sha256: 278e977b8989f00a07f2b2081d664de5d0500327b69e45c700829df3e2f51bb0
+metadata_sha256:
+  PtRoster_a.txt: 64bd16713959b98d0e2b4d75d9791c58eebbb6487e73123fa768478dc2e5afe1
+  DiabScreening_a.txt: 298f23d49fdf71b978ca09dd1977d5827e7bc10ff352f4e85b01781e4f288f8f
+  AdvEvent_a.txt: 3458bb82af7cf6d9b4df15933547175b01a8462122849ca96fba7a455172a1cd
+original_glucose_unit: mg/dL
+device: Dexcom Clarity CGM
+source_label: type_1_diabetes_study_enrollment
+source_time_policy: corrected_DataDtTm_adj_else_DataDtTm_local_no_zone_asserted
+unverifiable_baseline_clock_ids: ['68']
+unverified_baseline_treatment_ids: ['13', '84', '117']

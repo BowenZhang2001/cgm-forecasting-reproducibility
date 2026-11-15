@@ -1,0 +1,23 @@
+dataset: Lynch_2022
+status: audited_t1d_baseline
+source_cgm: IOBP2DeviceCGM.txt
+source_cgm_size_bytes: 822215233
+source_cgm_sha256: 1b3e6301227064877676704aead5c329f69bee8ea679263f068b5d1722e83c8a
+metadata_sha256:
+  IOBP2PtRoster.txt: 9adb6a447b550eb6cb34dc1e59c3ce157e6e786107e6f03a41a1c33241a4ec25
+  IOBP2RandBaseInfo.txt: 26fecdc4994cd2df53d4226c5a63bb65c764a210aea12d2e7c7dec8a72deb813
+  IOBP2Eligibility.txt: 54e7bf24ef5f480f97b584e436b8e0d6774a10c8012b0d26ee7ad25f43c6b43e
+  IOBP2AdvEvent.txt: f0afe5f5dbb91acc6f401b2dfccc3b281243e78c0bb559d0a4bd0cb704349b60
+original_glucose_unit: mg/dL
+device: study CGM (Dexcom G6 per protocol; not row encoded)
+source_label: type_1_diabetes_study_enrollment
+source_time_policy: DeviceDtTm_source_local_no_zone_asserted
+allowed_baseline_treatment:
+  - Multiple daily injections
+  - Conventional pump without automation
+  - Patch pump
+excluded_automated_baseline_treatment:
+  - Tandem Control IQ
+  - Medtronic 670G/770G using automode
+  - Tandem Basal IQ
+prespecified_exclusions: ['104', '476']

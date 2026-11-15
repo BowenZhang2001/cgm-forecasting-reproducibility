@@ -1,0 +1,11 @@
+Image encoder code
+
+Copyright (c) 2026 Helen
+
+This notice applies to the following files:
+  image/src/common.py
+  image/scripts/train_food101.py
+  image/scripts/train_nutrition5k.py
+
+These files are licensed under the MIT License. See the LICENSE file
+at the repository root for the full license text.

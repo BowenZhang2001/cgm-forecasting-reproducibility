@@ -1,0 +1,9 @@
+{
+  "repo_id": "CRUISEResearchGroup/CGM-JEPA",
+  "revision": "468f6a4d721e6dcc1453913d8f7c41d24f5cef1a",
+  "files": {
+    "cgm_jepa/config.json": "0294e7dce880b1576cdb7063d3873ff3bdba8e1e45f3e67a70381815343b7143",
+    "cgm_jepa/model.safetensors": "ac3aa4b7d7c16cf0686f55bb8ac6124a2de0bd9f9bfc613193d2f9ebf084f4b0",
+    "baselines/gluformer.pt": "2aaae7c1c7e538bb8fa07b56766166e66da25d27091a8f54d4b1c81d64ade12d"
+  }
+}

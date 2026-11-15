@@ -1,0 +1,16 @@
+{
+  "python": {
+    "data": "/path/to/data-env/bin/python",
+    "benchmark": "/path/to/benchmark-env/bin/python",
+    "bolt": "/path/to/bolt-env/bin/python",
+    "chronos2": "/path/to/chronos2-env/bin/python",
+    "timesfm": "/path/to/timesfm-env/bin/python",
+    "image": "/path/to/image-env/bin/python"
+  },
+  "source_paths": "/path/to/sources.json",
+  "work_root": "/path/to/work-outside-the-repository",
+  "cgmacros": "/path/to/CGMacros-extracted",
+  "food101": "/path/to/food-101",
+  "nutrition5k": "/path/to/nutrition5k_dataset",
+  "r_library": "/path/to/R-library"
+}

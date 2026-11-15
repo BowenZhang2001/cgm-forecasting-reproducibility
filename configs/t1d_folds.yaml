@@ -1,0 +1,13 @@
+specification_version: '1.5'
+folds:
+  A:
+    external: Anderson_2016
+    development: [Brown_2019, Lynch_2022]
+  B:
+    external: Brown_2019
+    development: [Anderson_2016, Lynch_2022]
+  C:
+    external: Lynch_2022
+    development: [Anderson_2016, Brown_2019]
+partition_observed_fractions: [0.6, 0.2, 0.2]
+normalization_observed_training_only: true

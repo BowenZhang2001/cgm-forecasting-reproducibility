@@ -1,0 +1,35 @@
+dataset: AI_READI_2025
+status: development_build
+source_release_status: consistent_with_v3.0.0_not_independently_verified
+source_evidence:
+  source_release_marker: absent_from_uploaded_CGM_and_metadata_inventory
+  official_v3_changelog: https://docs.aireadi.org/docs/3/changelog
+  official_v3_healthsheet: https://docs.aireadi.org/docs/3/dataset/healthsheet
+  matching_participant_count: 2280
+  matching_CGM_body_structure: body.cgm
+source_files:
+  participants: participants.tsv
+  cgm_manifest: manifest.tsv
+  cgm_directory: dexcom_g6/dexcom_g6
+verified_source_sha256:
+  participants_tsv: 481130e61c26a7bd2fa05f6421f236c1d52ac4aebee87df1f07ba7e2e7819825
+  cgm_manifest_tsv: 75f81fe7223c28215dd82e6961c007ae1e8a3a8e6c194673e7d73530123396b3
+  cgm_inventory_digest: 0c077dde730762897bdc7e86c1aeec32efb52cbaa5e698ebfc39f715b5d5a88f
+timestamp_policy:
+  source_reading_suffix: Z
+  axis: UTC
+  pst: America/Los_Angeles
+  cst: America/Chicago
+  site_mapping:
+    UW: pst
+    UCSD: pst
+    UAB: cst
+cohort_source_labels:
+  primary:
+    - pre_diabetes_lifestyle_controlled
+    - oral_medication_and_or_non_insulin_injectable_medication_controlled
+    - insulin_dependent
+  healthy_supplementary:
+    - healthy
+source_device: Dexcom G6
+source_glucose_unit: mg/dL

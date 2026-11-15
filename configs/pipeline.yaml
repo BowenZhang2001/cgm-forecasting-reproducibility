@@ -1,0 +1,12 @@
+specification:
+  version: "1.5"
+cleaning:
+  glucose_mmol_to_mgdl: 18.0182
+  glucose_min_mgdl: 40
+  glucose_max_mgdl: 400
+  grid_minutes: 5
+  max_short_gap_positions: 24
+  boundary_washout_positions: 24
+  context_positions: 288
+  target_positions: 24
+  origin_stride_positions: 6

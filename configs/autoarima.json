@@ -1,0 +1,60 @@
+{
+  "status": "configured_for_test_evaluation",
+  "use_test_partitions": true,
+  "auto_arima": {
+    "d": null,
+    "D": 0,
+    "max.p": 5,
+    "max.q": 5,
+    "max.d": 2,
+    "max.P": 0,
+    "max.Q": 0,
+    "max.D": 0,
+    "max.order": 10,
+    "start.p": 2,
+    "start.q": 2,
+    "start.P": 0,
+    "start.Q": 0,
+    "stationary": false,
+    "seasonal": false,
+    "ic": "aicc",
+    "stepwise": true,
+    "nmodels": 94,
+    "trace": false,
+    "approximation": false,
+    "method": "ML",
+    "truncate": null,
+    "xreg": null,
+    "test": "kpss",
+    "test.args": {
+      "alpha": 0.05,
+      "type": "level"
+    },
+    "seasonal.test": "seas",
+    "seasonal.test.args": {},
+    "allowdrift": true,
+    "allowmean": true,
+    "lambda": null,
+    "biasadj": false,
+    "parallel": false,
+    "num.cores": 1,
+    "optim.method": "BFGS",
+    "optim.control": {
+      "maxit": 100,
+      "reltol": 1e-08
+    },
+    "SSinit": "Gardner1980",
+    "kappa": 1000000,
+    "transform.pars": true
+  },
+  "R_version": "4.1.2",
+  "forecast_version": "8.24.0",
+  "worker_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "CLI_NO_THREAD": "1"
+  }
+}

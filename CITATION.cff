@@ -1,0 +1,10 @@
+cff-version: "1.2.0"
+message: "If you use this software, please cite it as below."
+type: software
+title: "CGM Forecasting Reproducibility"
+authors:
+  - family-names: Zhang
+    given-names: Bowen
+version: "0.1.0"
+url: "https://github.com/BowenZhang2001/cgm-forecasting-reproducibility"
+license: MIT

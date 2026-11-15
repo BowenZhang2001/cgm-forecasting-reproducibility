@@ -1,0 +1,4 @@
+CGM-JEPA and compact GluFormer model definitions from CRUISE Research Group.
+https://github.com/cruiseresearchgroup/CGM-JEPA
+Upstream commit ef18c28517ce103f45069dec2594e3774b0fda41.
+Encoder imports were scoped to this package.

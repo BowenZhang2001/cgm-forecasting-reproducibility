@@ -1,0 +1,10 @@
+PatchTST supervised components
+Original project: https://github.com/yuqinie98/PatchTST
+Reference commit: 204c21efe0b39603ad6e2ca640ef5896646ab1a9
+Authors: Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, Jayant Kalagnanam.
+Licensed under Apache License 2.0; complete upstream LICENSE is adjacent.
+Adapted files: PatchTST_supervised/layers/{PatchTST_backbone.py,PatchTST_layers.py,RevIN.py}.
+Changes: package-relative imports, attribution headers, trailing whitespace and final newline.
+All computation is retained. RevIN and decomposition are disabled in this benchmark.
+The wrapper/trainer/configuration are new benchmark integration code.
+Upstream README acknowledges tsai and RevIN; existing source comments are preserved.

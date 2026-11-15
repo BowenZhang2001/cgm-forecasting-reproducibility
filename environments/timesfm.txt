@@ -1,0 +1,6 @@
+-r benchmark.txt
+accelerate==1.6.0
+huggingface-hub==1.5.0
+peft==0.18.1
+safetensors==0.8.0
+transformers @ git+https://github.com/huggingface/transformers.git@aad13b87ed59f2afcfaebc985f403301887a35fc

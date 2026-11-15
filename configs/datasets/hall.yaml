@@ -1,0 +1,17 @@
+dataset: Hall_2018
+role: external_test
+source_release: PLOS Biology 2018 e2005143 supplementary S1 and S5 Data
+source_cgm: pbio.2005143.s010
+source_clinical: pbio.2005143.s014.db
+source_cgm_size_bytes: 5671057
+source_cgm_sha256: 9a3c85efe9bceb8ac666ae2e585aecea2057aebb81018004040f7dd514683d26
+source_clinical_size_bytes: 27648
+source_clinical_sha256: fa1a43cc870bc4bc98f6af47b5e59e1168d77ec9664a3187cad2b9e623911ad6
+source_time_column: DisplayTime
+source_time_policy: preserve_display_clock_as_local_without_unverified_offset
+original_glucose_unit: mg/dL
+device: Dexcom G4
+labels:
+  diabetic: {cohort: primary, subgroup: T2D}
+  pre-diabetic: {cohort: primary, subgroup: prediabetes}
+  non-diabetic: {cohort: healthy_supplementary, subgroup: healthy}

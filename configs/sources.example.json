@@ -1,0 +1,9 @@
+{
+  "AI_READI_2025": "/path/to/aireadi-cgm-and-metadata",
+  "Anderson_2016": "/path/to/anderson/Data Tables",
+  "Brown_2019": "/path/to/brown/Data Files",
+  "Lynch_2022": "/path/to/lynch/Data Tables",
+  "Broll_2021": "/path/to/iglu_4.2.2.tar.gz",
+  "Hall_2018": "/path/to/glucotypes-supplements",
+  "CGMacros_2025": "/path/to/CGMacros-extracted"
+}

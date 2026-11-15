@@ -1,0 +1,52 @@
+{
+  "version": "1.1",
+  "source_convention": "source_processed_five_minute_mean",
+  "primary_channel": "Dexcom GL",
+  "glucose_units": "mg/dL_under_release_dictionary_assumption",
+  "glucose_range": [
+    40,
+    400
+  ],
+  "grid_minutes": 5,
+  "bin_minutes": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0
+  ],
+  "phase_inference": "prefix_piecewise_linear_five_minute_v1",
+  "curvature_absolute_tolerance": 1e-07,
+  "max_context_gap_positions": 24,
+  "discontinuity_positions": 25,
+  "washout_positions": 24,
+  "split_fractions": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "split_rounding": "floor_train_floor_validation_remainder_test",
+  "context_positions": 288,
+  "target_positions": 24,
+  "horizon_prefix_positions": [
+    6,
+    12,
+    24
+  ],
+  "origin_stride_positions": 1,
+  "meal_alignment": "first_actual_grid_point_at_or_after_source_timestamp",
+  "meal_tie_break": "largest_finite_calories_then_earliest_source_time_then_lowest_source_line",
+  "recent_meal_max_minutes_inclusive": 360,
+  "neutral_elapsed_hours": 6,
+  "meal_history_boundary_policy": "same_partition_and_natural_segment_else_mask_latest_without_backfill",
+  "image_candidate": "nonempty_meal_type_and_image_reference",
+  "image_role_basis": "operational_typed_row_rule_not_verified_acquisition_time",
+  "nutrient_fields": [
+    "Calories",
+    "Carbs",
+    "Protein",
+    "Fat",
+    "Fiber"
+  ],
+  "nutrient_adjustment": "none"
+}

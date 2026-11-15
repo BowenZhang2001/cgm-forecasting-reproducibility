@@ -1,0 +1,15 @@
+dataset: Anderson_2016
+status: audited_t1d_baseline
+source_cgm: CGM.txt
+source_cgm_size_bytes: 78195237
+source_cgm_sha256: 5fe7b43ebe34f04e14fd0fda9c4bcf564e9eeb0e383ed98bc799c210fa6497e3
+metadata_sha256:
+  Enrollment.txt: 0af5b024e7c4a0143e30e5ea2eb460ae30e79363e6df4105ded7c142b65b54cf
+  VisitInfo.txt: e4c3a56a0150143a45794c4799748d61b377bc8a2453f3b1a3dca310c81d8ae6
+  AdvEvent.txt: f7f12e84a610ff2570597247a1a65d2dc7a5f9bf692eb10d5baf2e143889b960
+original_glucose_unit: mg/dL
+device: Dexcom G4
+source_label: type_1_diabetes_study_enrollment
+source_time_policy: corrected_DisplayTimeAdjusted_else_DisplayTime_local_no_zone_asserted
+baseline_start_visit: Open-loop Transitional Training Visit
+baseline_end_visit: Initiation of Trial Overnight Closed-Loop at Home

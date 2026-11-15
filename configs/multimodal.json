@@ -1,0 +1,150 @@
+{
+  "context_points": 288,
+  "forecast_points": 24,
+  "evaluation_prefix_points": [
+    6,
+    12,
+    24
+  ],
+  "image_pca_dimensions": 8,
+  "recent_meal_window_hours": 6,
+  "residual_training": {
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "precision": "float32",
+    "max_epochs": 100,
+    "seeds": [
+      20261014,
+      20261015,
+      20261016,
+      20261017,
+      20261018
+    ],
+    "loss": "mse_on_standardized_24_step_residuals",
+    "sampling": "participant_balanced_with_replacement"
+  },
+  "variants": {
+    "M0": {
+      "base_forecast_only": true
+    },
+    "M1": {
+      "modalities": [
+        "cgm"
+      ],
+      "projection_dimension": 32,
+      "hidden_units": [
+        128,
+        64
+      ],
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 64
+    },
+    "M2": {
+      "modalities": [
+        "cgm",
+        "time"
+      ],
+      "projection_dimension": 32,
+      "hidden_units": [
+        128,
+        64,
+        32
+      ],
+      "dropout": 0.3,
+      "learning_rate": 0.003,
+      "weight_decay": 0.01,
+      "batch_size": 64
+    },
+    "M3": {
+      "modalities": [
+        "cgm",
+        "time",
+        "image"
+      ],
+      "projection_dimension": 64,
+      "hidden_units": [
+        64
+      ],
+      "dropout": 0.5,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0,
+      "batch_size": 128,
+      "image_encoder": "food101"
+    },
+    "M3-N": {
+      "modalities": [
+        "cgm",
+        "time",
+        "image"
+      ],
+      "projection_dimension": 64,
+      "hidden_units": [
+        128,
+        64
+      ],
+      "dropout": 0.5,
+      "learning_rate": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "image_encoder": "nutrition5k"
+    },
+    "M4": {
+      "modalities": [
+        "cgm",
+        "time",
+        "nutrition"
+      ],
+      "projection_dimension": 32,
+      "hidden_units": [
+        256,
+        128
+      ],
+      "dropout": 0.3,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "batch_size": 32
+    },
+    "M5": {
+      "modalities": [
+        "cgm",
+        "time",
+        "image",
+        "nutrition"
+      ],
+      "projection_dimension": 64,
+      "hidden_units": [
+        128,
+        64
+      ],
+      "dropout": 0.5,
+      "learning_rate": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "image_encoder": "food101"
+    },
+    "M5-N": {
+      "modalities": [
+        "cgm",
+        "time",
+        "image",
+        "nutrition"
+      ],
+      "projection_dimension": 64,
+      "hidden_units": [
+        128,
+        64
+      ],
+      "dropout": 0.5,
+      "learning_rate": 0.0001,
+      "weight_decay": 1e-05,
+      "batch_size": 128,
+      "image_encoder": "nutrition5k"
+    }
+  }
+}
